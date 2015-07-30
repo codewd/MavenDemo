@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.mewin.entity">
+	<class name="Gongyang">
+		<id name="id"><generator class="native"/></id>
+		<property name="erbiao" length="15"/>
+		<property name="born" type="date"/>
+		<property name="weight" />
+		<property name="sex" />
+		<property name="pinzhong" length="15"/>
+		<property name="xiongwei" length="15"/>
+		<property name="tigao" length="15"/>
+		<property name="tichang" length="15"/>
+		<property name="rongchang" />
+		<property name="rongxi" />
+		<property name="fuqin" length="15"/>
+		<property name="peizhong" length="15"/>
+		<property name="muqin" length="15"/>
+		<property name="userId" />
+		<property name="fangyi" length="300" />
+	</class>
+	
+</hibernate-mapping>

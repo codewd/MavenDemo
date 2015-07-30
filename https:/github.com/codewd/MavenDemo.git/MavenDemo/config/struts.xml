@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 配置为开发模式 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 把扩展名配置为action -->
+	<constant name="struts.action.extension" value="action,UI,htm"></constant>
+	<!-- 把主题配置为simple -->
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.multipart.maxSize" value="1070109600"></constant>
+
+	<package name="default" namespace="/" extends="struts-default">
+		
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="user_login">/ui/user/mylogin.jsp</result>
+			<!-- <result name="login_success" type="redirectAction">bsheep_list.htm</result> -->
+		</action>
+		
+	</package>
+</struts>    

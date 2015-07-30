@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.mewin.entity">
+	<class name="Xiangmu">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="xmm" length="15" />
+		<property name="fzdw" length="15" />
+		<property name="fzr" length="15" />
+		<property name="xmzt" length="15" />
+		<property name="userId" length="15" />
+	</class>
+</hibernate-mapping>

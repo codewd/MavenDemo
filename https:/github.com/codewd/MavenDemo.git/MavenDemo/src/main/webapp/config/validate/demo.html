@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/validationEngine.jquery.css">
+</head>
+<body>
+    <div style="height: 50px"></div>
+    <form id="form1">
+        <input name="text" name="user" class="validate[required]">
+        <input name="text" name="user" class="validate[required]">
+        <input type="submit">
+    </form>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.validationEngine.min.js"></script>
+<script src="js/jquery.validationEngine-zh_CN.js"></script>
+<script>
+    $(function () {
+        $('#form1').validationEngine();
+    })
+
+</script>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.mewin.entity">
+	<class name="Shoujing">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="erbiao" length="15" />
+		<property name="fqyw" length="15" />
+		<property name="fqsj" type="date" />
+		<property name="pzsj" type="date" />
+		<property name="jzeb" length="15" />
+		<property name="bz" length="15" />
+	</class>
+</hibernate-mapping>

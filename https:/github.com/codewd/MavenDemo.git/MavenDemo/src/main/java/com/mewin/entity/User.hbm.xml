@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.mewin.entity">
+
+	<class name="User">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="account" length="15"/>
+		<property name="psd" length="15"/>
+		<property name="name" length="20"/>
+		<property name="nikeName" length="20"/>
+		<property name="zw" length="20"/>
+		<property name="part"/>
+		<property name="phone" length="20"/>
+		<property name="description" length="300"/>
+		<property name="leader" length="300"/>
+		<property name="email" length="300"/>
+		<property name="time" type="timestamp" />
+		<property name="visable"/>
+		
+	</class>
+	
+</hibernate-mapping>

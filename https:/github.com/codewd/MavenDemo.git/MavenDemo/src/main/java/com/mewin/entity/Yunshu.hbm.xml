@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.mewin.entity">
+	<class name="Yunshu">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="ddrq" type="date" />
+		<property name="fuzeren" length="15" />
+		<property name="dianhua" length="15" />
+		<property name="ysdh" length="15" />
+		<property name="sjxm" length="15" />
+		<property name="sjdh" length="15" />
+		<property name="chehao" length="15" />
+		<property name="ddqd" length="15" />
+		<property name="shrq" type="date" />
+		<property name="ddmdd" length="15" />
+	</class>
+</hibernate-mapping>

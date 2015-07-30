@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.mewin.entity">
+
+	<class name="FileUp">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="userId" length="15"/>
+		<property name="realName" length="40"/>
+		<property name="fileName" length="40"/>
+		<property name="fileType" length="20"/>
+		<property name="fileSize" length="20"/>
+		<property name="flag"/>
+		<property name="time" type="timestamp" />
+		
+	</class>
+	
+</hibernate-mapping>

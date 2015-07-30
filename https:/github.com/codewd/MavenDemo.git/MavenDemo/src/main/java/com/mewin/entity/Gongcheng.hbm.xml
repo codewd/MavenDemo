@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.mewin.entity">
+	<class name="Gongcheng">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="xmgh" length="15" />
+		<property name="yszj" />
+		<property name="fuzeren" length="15" />
+		<property name="gongqi" length="15" />
+		<property name="xmjz" length="15" />
+	</class>
+</hibernate-mapping>
